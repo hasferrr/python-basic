@@ -6,30 +6,32 @@
 
 Basic :
 
-- [01-basic.ipynb](01-basic.ipynb)
+- [Basic](01-basic.ipynb)
 
 Loop series :
 
-- [03-for-loop.ipynb](03-for-loop.ipynb)
-- [04-while-loop.ipynb](04-while-loop.ipynb)
-- [05-loop-others.ipynb](05-loop-others.ipynb)
+- [For Loop](03-for-loop.ipynb)
+- [While Loop](04-while-loop.ipynb)
+- [Others](05-loop-others.ipynb)
 
 Python Collections (Arrays) :
 
-- [02-list.ipynb](02-list.ipynb)
-- [06-tuple.ipynb](06-tuple.ipynb)
-- [07-set.ipynb](07-set.ipynb)
-- [09-dictionaries.ipynb](09-dictionaries.ipynb)
+- [List](02-list.ipynb)
+- [Tuple](06-tuple.ipynb)
+- [Set](07-set.ipynb)
+- [Dictionaries](09-dictionaries.ipynb)
 
 Function (Method) :
 
-- [08-function.ipynb](08-function.ipynb)
-- [10-function-agane.ipynb](10-function-agane.ipynb)
+- [Function](08-function.ipynb)
+- [Function 2](10-function-agane.ipynb)
 
 Other :
 
-- [11-modules.ipynb](11-modules.ipynb)
-- [12-string-methods.ipynb](12-string-methods.ipynb)
+- [Modules](11-modules.ipynb)
+- [String Methods](12-string-methods.ipynb)
+- [Other Templates](13-other-templates.ipynb)
+- [Try and Except (Python Error Handling)](14-try-and-except.ipynb)
 
 ## References
 
@@ -37,3 +39,4 @@ Other :
 - [Python w3schools](https://www.w3schools.com/python)
 - [Python javatpoint](https://www.javatpoint.com/python-tutorial)
 - [Python 3.9.13 documentation](https://docs.python.org/3.9/)
+- [Python Programming Tutorials](https://www.youtube.com/playlist?list=PLzMcBGfZo4-mFu00qxl0a67RhjjZj3jXm)
