@@ -41,15 +41,18 @@ while True:
     if menu == '0':
         break
 
-    if menu == '1':
+    elif menu == '1':
         function.tampilkan_kontak(daftar_kontak)
         function.pause()
     
-    if menu == '2':
+    elif menu == '2':
         kontak_baru = function.buat_kontak()
         daftar_kontak.append(kontak_baru)
         function.pause()
 
-    if menu == '3':
+    elif menu == '3':
         function.cari_kontak(daftar_kontak)
         function.pause()
+
+    else:
+        print('Menu tidak tersedia')
