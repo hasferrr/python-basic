@@ -12,11 +12,22 @@ daftar_kontak.append(
         'nomor telepon' : '098877'
     }
 )
+daftar_kontak.append({
+        'nama' : 'Ayato',
+        'email' : 'ayato@gmail.com',
+        'nomor telepon' : '099954'
+    })
+daftar_kontak.append(
+    {
+        'nama' : 'lumine',
+        'email' : 'lumine@gmail.com',
+        'nomor telepon' : '07765'
+    })
 
 # Menu
 while True:
     print()
-    print('Menu')
+    print('==========Menu Utama==========')
     print('1. Daftar kontak')
     print('2. Buat kontak')
     print('3. Cari kontak')
@@ -41,3 +52,4 @@ while True:
 
     if menu == '3':
         function.cari_kontak(daftar_kontak)
+        function.pause()
