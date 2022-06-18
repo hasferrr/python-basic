@@ -54,5 +54,9 @@ while True:
         function.cari_kontak(daftar_kontak)
         function.pause()
 
+    elif menu == '4':
+        function.hapus_kontak(daftar_kontak)
+        function.pause()
+
     else:
         print('Menu tidak tersedia')
