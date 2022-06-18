@@ -2,10 +2,10 @@
 
 def tampilkan_kontak(daftar_kontak):
     for data in daftar_kontak:
+        print()
         print(f'Nama : {data["nama"]}')
         print(f'Email : {data["email"]}')
         print(f'Nomor Telepon : {data["nomor telepon"]}')
-        print()
 
 def buat_kontak():
     nama_baru = input('Masukkan Nama Anda : ')
@@ -20,10 +20,14 @@ def buat_kontak():
     return kontak_baru
 
 def cari_kontak(daftar_kontak):
-    type_nama = input('Cari nama : ')
-    if type_nama.lower() in daftar_kontak[0]['nama'].lower():
-        print('yess') # BELUM SELESAI
-        # <-----------------------------------------
+    cari = input('Cari nama : ')
+
+    for data in daftar_kontak:       
+        if data['nama'].lower().find(cari.lower()) != -1:
+            print()
+            print(f'Nama : {data["nama"]}')
+            print(f'Email : {data["email"]}')
+            print(f'Nomor Telepon : {data["nomor telepon"]}')
 
 # Other Function
 
