@@ -1,8 +1,5 @@
 # Function
 
-from operator import index
-
-
 def tampilkan_kontak(daftar_kontak):
     print('==========Daftar Kontak==========')
     for data in daftar_kontak:
