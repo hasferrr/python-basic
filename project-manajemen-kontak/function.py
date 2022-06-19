@@ -39,7 +39,6 @@ def cari_kontak(daftar_kontak):
 def hapus_kontak(daftar_kontak):
     cari = input('Cari nama : ')        # input nama kontak
     
-    print('==========Pilih kontak yang akan dihapus==========')
     kontak_sementara = []               # untuk menampung kontak hasil pencarian yang akan dihapus
     i = 0
 
@@ -47,6 +46,8 @@ def hapus_kontak(daftar_kontak):
         if data['nama'].lower().find(cari.lower()) != -1:
             print()
             i += 1
+            if i == 1:
+                print('==========Pilih kontak yang akan dihapus==========')
             print(i)
             print(f'Nama : {data["nama"]}')
             print(f'Email : {data["email"]}')
@@ -59,6 +60,8 @@ def hapus_kontak(daftar_kontak):
             print()
             print('Pilih 0 untuk membatalkan')
             pilih_index = int(input('Hapus kontak ke : '))          # user MEMILIH
+            if pilih_index == 0:
+                return
         except:
             print("Kontak tidak tersedia")
             return
@@ -90,7 +93,7 @@ def hapus_kontak(daftar_kontak):
             print("Kontak tidak tersedia")
 
     else:                               # TIDAK ADA kontak yang DITEMUKAN
-        print('Tidak ada kontak ditemukan')
+        print('Tidak ada kontak yang ditemukan')
 
 # Other Function
 
