@@ -41,6 +41,10 @@ Other :
 - [Python 3.9.13 documentation](https://docs.python.org/3.9/)
 - [Python Programming Tutorials](https://www.youtube.com/playlist?list=PLzMcBGfZo4-mFu00qxl0a67RhjjZj3jXm)
 
+## My Python Project
+
+- [Project: Manajemen Kontak](/project-manajemen-kontak/)
+
 ## What's next ?
 
 Python Object-Oriented Programming (OOP)
