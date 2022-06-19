@@ -22,14 +22,19 @@ def buat_kontak():
 
 def cari_kontak(daftar_kontak):
     cari = input('Cari nama : ')
+    x = 0
 
-    print('==========Daftar Kontak==========')
     for data in daftar_kontak:       
         if data['nama'].lower().find(cari.lower()) != -1:
             print()
+            x += 1
+            if x == 1:
+                print('==========Daftar Kontak==========')
             print(f'Nama : {data["nama"]}')
             print(f'Email : {data["email"]}')
             print(f'Nomor Telepon : {data["nomor telepon"]}')
+    if x == 0:
+        print('Tidak ada kontak yang ditemukan')
 
 def hapus_kontak(daftar_kontak):
     cari = input('Cari nama : ')        # input nama kontak
