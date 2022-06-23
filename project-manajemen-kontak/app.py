@@ -46,8 +46,7 @@ while True:
         function.pause()
     
     elif menu == '2':
-        kontak_baru = function.buat_kontak()
-        daftar_kontak.append(kontak_baru)
+        function.buat_kontak(daftar_kontak)
         function.pause()
 
     elif menu == '3':

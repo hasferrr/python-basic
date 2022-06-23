@@ -8,7 +8,7 @@ def tampilkan_kontak(daftar_kontak):
         print(f'Email : {data["email"]}')
         print(f'Nomor Telepon : {data["nomor telepon"]}')
 
-def buat_kontak():
+def buat_kontak(daftar_kontak):
     nama_baru = input('Masukkan Nama Anda : ')
     email_baru = input('Masukkan Email Anda : ')
     nomor_telepon_baru = input('Masukkan Nomor Telepon Anda : ')
@@ -18,7 +18,8 @@ def buat_kontak():
         'email' : email_baru,
         'nomor telepon' : nomor_telepon_baru
     }
-    return kontak_baru
+
+    daftar_kontak.append(kontak_baru)
 
 def cari_kontak(daftar_kontak):
     cari = input('Cari nama : ')
