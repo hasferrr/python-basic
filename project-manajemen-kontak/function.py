@@ -113,10 +113,6 @@ def edit_kontak(daftar_kontak):
             print(f'Nomor Telepon : {data["nomor telepon"]}')
             kontak_sementara.append(data)    
 
-    # Mencegah error 'cannot unpack non-iterable NoneType object' ketika return
-    index_kontak = -1
-    kontak_diedit = -1
-
     if kontak_sementara != []:          # kontak DITEMUKAN
 
         try:
@@ -124,17 +120,17 @@ def edit_kontak(daftar_kontak):
             print('Pilih 0 untuk membatalkan')
             pilih_index = int(input('Edit kontak ke : '))          # user MEMILIH
             if pilih_index == 0:
-                return index_kontak, kontak_diedit
+                return
         except:
             print("Kontak tidak tersedia")
-            return index_kontak, kontak_diedit
+            return
         
         try:
             kontak_akan_diedit = kontak_sementara[pilih_index-1]   # {'nama':'v', 'email':'v', 'nt':'v'} yg akan DIEDIT
             index_kontak = daftar_kontak.index(kontak_akan_diedit)
         except:
             print("Kontak tidak tersedia")
-            return index_kontak, kontak_diedit
+            return
 
         if pilih_index > 0:
             print()
@@ -157,19 +153,24 @@ def edit_kontak(daftar_kontak):
                 no_telp_baru = kontak_akan_diedit['nomor telepon']
 
             # Variabel yang menampung kontak editan
-            kontak_diedit = {'nama':nama_baru,'email':email_baru,'nomor telepon':no_telp_baru}
+            kontak_diedit = {
+                'nama':nama_baru,
+                'email':email_baru,
+                'nomor telepon':no_telp_baru
+            }
             
             # Jika semuanya default
             if nama_baru == kontak_akan_diedit['nama'] and email_baru == kontak_akan_diedit['email'] and no_telp_baru == kontak_akan_diedit['nomor telepon']:
                 print('Kontak tidak diedit')
+
+            # Proses meng-edit daftar_kontak
+            daftar_kontak[index_kontak] = kontak_diedit
 
         else:
             print("Kontak tidak tersedia")
 
     else:                               # TIDAK ADA kontak yang DITEMUKAN
         print('Tidak ada kontak yang ditemukan')
-
-    return index_kontak, kontak_diedit
 
 # Other Function
 

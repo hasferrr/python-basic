@@ -59,11 +59,7 @@ while True:
         function.pause()
 
     elif menu == '5':
-        index_kontak, kontak_diedit = function.edit_kontak(daftar_kontak)
-        
-        if index_kontak != -1 and kontak_diedit != -1:
-            daftar_kontak[index_kontak] = kontak_diedit
-
+        function.edit_kontak(daftar_kontak)
         function.pause()
 
     else:
