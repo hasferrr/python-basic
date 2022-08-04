@@ -50,3 +50,5 @@ Other :
 Python Object-Oriented Programming (OOP)
 
 [This is CS50x 2022 - CS50’s Introduction to Computer Science](https://cs50.harvard.edu/x/2022/)
+
+[CS50's Introduction to Programming with Python (CS50P) 2022](https://www.youtube.com/playlist?list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V)
